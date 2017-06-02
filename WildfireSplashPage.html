@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<header>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    /* Column Widths */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    [class*=".col-"] {
+      float: left;
+      padding: 10px;
+    }
+    .row::after {
+      content: " ";
+      clear: both;
+      display: table;
+    }
+
+  </style>
+</header>
+
+<body>
+  <div class="row">
+    <div class=".col-12"></div>
+  </div>
+  <div class="row">
+    <div class=".col-2"></div>
+    <div class=".col-3">
+      <h1>Wildfire</h1>
+      <h3>The All in One Safety Tool for Emergencies</h3>
+      <p>Wildfire is a web and mobile app that allows you to stay informed during bushfires. We collect all the information you need, and display it in an intuitive way. Users can report fire sightings, road blockages, and other hazards, creating a real-time map of how the fire is moving. Wildfire also helps you organise your bushfire preparation plans, evacuation points and emergency contacts, giving you all the information you need in one convinient app.</p>
+    </div>
+    <div class=".col-2"></div>
+    <div class=".col-3">
+      <h2>~~image of phone with wildfire on it~~</h2>
+    </div>
+    <div class=".col-2"></div>
+  </div>
+</body>
+
+<footer>
+  <div class="row">
+    <div class=".col-12">
+      <p>Contact info and shit</p>
+    </div>
+  </div>
+</footer>
