@@ -48,7 +48,8 @@
       font-family: 'Open Sans', sans-serif;
     }
     #image {
-      padding-top: 30px
+      padding-top: 30px;
+      margin: auto;
     }
     a {
       color: #fffafa;
@@ -73,7 +74,12 @@
       background-color: #201f1b;
       color: #ff7759;
     }
+/* Super cool code from Daniel Mall - danielmall.me - that allows you to
+specify line breaks in text for responsive web design. */
+    .contact-line { display: block; }
 
+    @media screen and (min-width: 768px){
+        .contact-line { display: inline; }
     }
   </style>
 </header>
@@ -106,7 +112,7 @@
     </div>
   </div>
   <div class="navbar navbar-fixed-bottom">
-          <span><p>Get in touch: <a href="mailto:trent@trentoscott.co">trent@trentoscott.co</a> // <a href="mailto:scott@trentoscott.co">scott@trentoscott.co</a></p>
+          <span><p>Get in touch: </span><span class="contact-line"><a href="mailto:trent@trentoscott.co">trent@trentoscott.co</a> // <a href="mailto:scott@trentoscott.co">scott@trentoscott.co</a></p></span>
   </div>
 </div>
 </body>
